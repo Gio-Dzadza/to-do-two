@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import Home from './pages/home/Home';
+import GetStarted from './pages/getstarted/GetStarted';
+import { useState } from 'react';
+import UserPage from './pages/userpage/UserPage';
+
 
 function App() {
+
+  const [userProp, setUserProp] = useState(() => {
+    const storedUserProp = localStorage.getItem('userProp');
+    return storedUserProp ? JSON.parse(storedUserProp) : null;
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<Home />}/>
+          <Route path='/login' element={<GetStarted setUserProp={setUserProp}/>}/>
+          <Route path='/userpage' element={<UserPage userProp={userProp} />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

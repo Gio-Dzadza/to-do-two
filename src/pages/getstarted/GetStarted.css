@@ -1,0 +1,268 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+/*Variables*/
+.get-start-heading{
+    --h1-color: #000
+}
+
+form{
+    --from-bg: #fff;
+}
+
+.sign-in-btn{
+    --btn-bg-volor: #5EFC8D
+}
+
+
+/*desktop screen styles*/
+.get-started-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000 0% 0% no-repeat padding-box;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+/*get-started inner div styles*/
+.get-started-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    width: 588px;
+    height: 688px;
+    background: var(--from-bg) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+}
+
+
+.get-started-form .get-start-heading{
+    font-family: 'Poppins', sans-serif;
+    color: var(--h1-color);
+    margin-top: 26px;
+    font-size: xxx-large;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+
+/*form styles*/
+.get-started-form .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.get-started-form .form .photo-upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-started-form .form .photo-upload span{
+    margin: 18px 0 10px 0;
+    font: normal normal 300 22px/33px 'Poppins', sans-serif;
+}
+
+.get-started-form .form .photo-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 122px;
+    height: 122px;
+    background: #E6EBFF 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.get-started-form .form .photo-icon:hover{
+    cursor: pointer;
+}
+
+
+.get-started-form .form .name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-started-form .form .name span{
+    margin: 53px 0 16px 0;
+    font: normal normal 300 22px/33px 'Poppins', sans-serif;
+}
+
+.get-started-form .form .name .name-input{
+    background: #E6EBFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    border: 0px;
+    width: 487px;
+    height: 76px;
+    padding-left: 24px;
+    outline: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+.get-started-form .form .name .name-input::placeholder{
+    font: normal normal 300 22px/33px 'Poppins', sans-serif;
+    opacity: 0.2;
+}
+
+
+
+.get-started-form .form .sign-in-btn{
+    background: var(--btn-bg-volor) 0% 0% no-repeat padding-box;
+    padding: 11px 77px;
+    border-radius: 4px;
+    text-align: center;
+    color: #000000;
+    text-transform: capitalize;
+    margin-top: 76px;
+    border: none;
+    text-decoration: none;
+    font: normal normal 300 32px/48px 'Poppins', sans-serif;
+}
+
+
+/*sign in button hover*/
+.get-started-form .form .sign-in-btn:hover{
+    background: #000 0% 0% no-repeat padding-box;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/*go-back btn*/
+.get-started-form .go-back-btn{
+    background: #fff 0% 0% no-repeat padding-box;
+    padding: 6px 42px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: large;
+    letter-spacing: 0px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    margin: auto;
+}
+
+.get-started-form .go-back-btn:hover{
+    cursor: pointer;
+    background-color: #5EFC8D;
+}
+
+/*go-back button arrow*/
+.get-started-form .go-back-btn::before{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #5EFC8D;
+}
+
+/*go-back button arrow hover*/
+.get-started-form .go-back-btn:hover::before{
+    border-right-color: #000;
+}
+
+/*styles for mobile phones: */
+@media only screen and (max-width: 480px) {
+    .get-started-form{
+        width: 90%;
+    }
+    
+    .get-started-form .get-start-heading{
+        font-size: xx-large;
+    }
+    
+    .get-started-form .form{
+        width: 100%;
+    }
+
+    .get-started-form .form .photo-upload span{
+        font-size: large;
+    }
+    
+    .get-started-form .form .name{
+        width: 100%;
+    }
+    
+    .get-started-form .form .name span{
+        font-size: large;
+    }
+    
+    .get-started-form .form .name .name-input{
+        width: 80%;
+        font-size: large;
+    }
+    
+    .get-started-form .form .name .name-input::placeholder{
+        font-size: large;
+    }
+    
+    .get-started-form .form .sign-in-btn{
+        width: 87%;
+        margin-top: 30px;
+        font-size: 29px;
+    }
+    
+    /*go-back btn*/
+    .get-started-form .go-back-btn{
+        margin: auto;
+    }
+}
+
+
+/*styles for tablet screens */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    .get-started-form{
+        width: 90%;
+    }
+    
+    .get-started-form .get-start-heading{
+        font-size: xxx-large;
+    }
+    
+    .get-started-form .form{
+        width: 100%;
+    }
+
+    .get-started-form .form .photo-upload span{
+        font-size: large;
+    }
+    
+    .get-started-form .form .name{
+        width: 100%;
+    }
+    
+    .get-started-form .form .name span{
+        font-size: large;
+    }
+    
+    .get-started-form .form .name .name-input{
+        width: 70%;
+        font-size: large;
+    }
+    
+    .get-started-form .form .sign-in-btn{
+        margin-top: 30px;
+        font-size: 29px;
+    }
+    
+    /*go-back btn*/
+    .get-started-form .go-back-btn{
+        margin: auto;
+    }
+}

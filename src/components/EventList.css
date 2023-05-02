@@ -1,0 +1,58 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/*wrapper*/
+.events-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 595px;
+}
+
+/*event*/
+.events-wrapper .event{
+    background-color: #000;
+    color:#fff;
+    display: flex;
+    border-radius: 4px;
+    justify-content: end;
+    gap: 15px;
+    text-transform: capitalize;
+    height: 54px;
+}
+
+.events-wrapper .event .event-heading{
+    margin: 11px auto 0px 24px;
+    font: normal normal 300 22px/33px 'Poppins', sans-serif;
+}
+
+.events-wrapper .event .done-btn{
+    background: transparent;
+    border: none;
+    padding-right: 11px;
+    padding-left: 12px;
+}
+
+.events-wrapper .event .done-btn:hover{
+    cursor: pointer;
+    background-color: #5EFC8D;
+    border-radius: 4px;
+}
+
+.event.done{
+    background: #ededed 0% 0% no-repeat padding-box;
+}
+
+.events-wrapper .event .delete-btn{
+    background: transparent;
+    border: none;
+    padding-right: 11px;
+    padding-left: 12px;
+}
+
+.events-wrapper .event .delete-btn:hover{
+    cursor: pointer;
+    background-color: #fc5e5e;
+    border-radius: 4px;
+}
