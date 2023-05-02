@@ -34,7 +34,7 @@ export default function GetStarted({ setUserProp }) {
 
 
   const goBack = ()=>{
-    navigate(-1)
+    navigate("/")
   }
 
 
