@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <BrowserRouter basename='/to-do-two'>
         <Routes>
-          <Route exact path='/to-do-two' element={<Home />}/>
+          <Route exact path='/' element={<Home />}/>
           <Route path='/login' element={<GetStarted setUserProp={setUserProp}/>}/>
           <Route path='/userpage' element={<UserPage userProp={userProp} />} />
         </Routes>
