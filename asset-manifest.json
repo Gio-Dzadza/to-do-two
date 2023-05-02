@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/to-do-two/static/css/main.e69e2320.css",
-    "main.js": "/to-do-two/static/js/main.c70cc872.js",
+    "main.js": "/to-do-two/static/js/main.141c343f.js",
     "static/media/mainIcon.svg": "/to-do-two/static/media/mainIcon.6539375094aa5a0dd738cd028efa6760.svg",
     "static/media/photocamera.svg": "/to-do-two/static/media/photocamera.3096d799b92968f30a6f7e7a2b5c9acc.svg",
     "index.html": "/to-do-two/index.html",
     "static/media/delete.svg": "/to-do-two/static/media/delete.a24197aa271ccbd1a01e2315e286dcaf.svg",
     "static/media/done.svg": "/to-do-two/static/media/done.2aa07be6c968315034e232e3c83d97f5.svg",
     "main.e69e2320.css.map": "/to-do-two/static/css/main.e69e2320.css.map",
-    "main.c70cc872.js.map": "/to-do-two/static/js/main.c70cc872.js.map"
+    "main.141c343f.js.map": "/to-do-two/static/js/main.141c343f.js.map"
   },
   "entrypoints": [
     "static/css/main.e69e2320.css",
-    "static/js/main.c70cc872.js"
+    "static/js/main.141c343f.js"
   ]
 }
