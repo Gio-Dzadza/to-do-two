@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home/Home';
 import GetStarted from './pages/getstarted/GetStarted';
 import { useState } from 'react';
@@ -14,13 +14,13 @@ function App() {
 
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter basename='/to-do-two'>
         <Routes>
-          <Route exact path='/' element={<Home />}/>
+          <Route exact path='/to-do-two' element={<Home />}/>
           <Route path='/login' element={<GetStarted setUserProp={setUserProp}/>}/>
           <Route path='/userpage' element={<UserPage userProp={userProp} />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }

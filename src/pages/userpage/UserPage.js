@@ -69,7 +69,7 @@ export default function UserPage({ userProp }) {
     const handleLogoutClick = () => {
         localStorage.removeItem('userProp');
         localStorage.removeItem('events');
-        history('/'); 
+        history('/to-do-two'); 
     };
 
 return (
