@@ -2,6 +2,8 @@
 
 Make some to do notes.
 
+ Open it here: https://gio-dzadza.github.io/to-do-two/
+
 🌟 technologies I've used:
 - React,js
 - react-router-dom
